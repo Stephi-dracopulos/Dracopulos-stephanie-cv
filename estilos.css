@@ -1,0 +1,38 @@
+/* css document */
+@charset "utf-8";
+
+@font-face { 
+    font-family:"piazzolla-regular.ttf";
+    src: url(fuentes/piazzzola-regular.ttf) format(true-type);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "piazzolla-thin.ttf";
+    src: url(fuentes/piazzolla-thin.ttf) format(true-type);
+    font-weight: thin;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "piazzolla-bold.ttf";
+    src: url(fuentes/piazzolla-bold.ttf) format(true-type);
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "piazzolla-regular.ttf", serif;
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+}
+
+* {
+
+}
+
+body {
+
+}
