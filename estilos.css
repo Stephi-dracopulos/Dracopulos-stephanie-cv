@@ -1,38 +1,36 @@
-/* css document */
+/* configuraciones generales*/
+
 @charset "utf-8";
 
-@font-face { 
-    font-family:"piazzolla-regular.ttf";
-    src: url(fuentes/piazzzola-regular.ttf) format(true-type);
-    font-weight: normal;
-    font-style: normal;
+* {
+    font-family: "Roboto", sans-serif;
+    Background-color: #e0ddd2
 }
 
-@font-face {
-    font-family: "piazzolla-thin.ttf";
-    src: url(fuentes/piazzolla-thin.ttf) format(true-type);
-    font-weight: thin;
-    font-style: normal;
-}
+/* aplicaciones */
 
-@font-face {
-    font-family: "piazzolla-bold.ttf";
-    src: url(fuentes/piazzolla-bold.ttf) format(true-type);
-    font-weight: bold;
-    font-style: normal;
+nav a {
+    font-family: "Bebas Neue", sans-serif;
+    color: #0b0400;
+    font-size: 1.66rem;
 }
 
 h1 {
-    font-family: "piazzolla-regular.ttf", serif;
-    font-size: 50px;
-    color: #000000;
-    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    color: #0b0400;
+    font-size: 15rem;
+    line-height: 15rem;
+    text-align:left ;
 }
 
-* {
-
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #0b0400;
+    font-size: 5rem;
 }
 
-body {
-
+p {
+    text-wrap-style: balance;
+    text-align: left;
+    line-height: 1.3rem;
 }
