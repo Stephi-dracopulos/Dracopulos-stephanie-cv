@@ -7,7 +7,28 @@
     Background-color: #e0ddd2
 }
 
+/* PORTADA */
+
+.portada {
+    position: relative;
+    width: 100%;
+    min-height: 800px;
+    background-image: url("img/perfil.png");
+    background-size: 700px 735.47px;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
 /* aplicaciones */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+}
 
 nav a {
     font-family: "Bebas Neue", sans-serif;
@@ -18,19 +39,28 @@ nav a {
 h1 {
     font-family: "Bebas Neue", sans-serif;
     color: #0b0400;
-    font-size: 15rem;
-    line-height: 15rem;
-    text-align:left ;
+    text-align: left;
+    font-size: 10rem;
+    
+
 }
+
 
 h2 {
     font-family: "Bebas Neue", sans-serif;
-    color: #0b0400;
-    font-size: 5rem;
+    color: #d44b07;
+    font-size: 4rem;
 }
 
 p {
     text-wrap-style: balance;
     text-align: left;
     line-height: 1.3rem;
+}
+
+
+h4 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #d44b07;
+    font-size: 2rem;
 }
