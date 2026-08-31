@@ -4,17 +4,20 @@
 
 * {
     font-family: "Roboto", sans-serif;
-    Background-color: #e0ddd2
+    Background-color: #e0ddd2;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 /* PORTADA */
 
 .portada {
-    position: relative;
     width: 100%;
-    min-height: 800px;
+    min-height: 830px;
     background-image: url("img/perfil.png");
-    background-size: 700px 735.47px;
+    background-size: 700px 736px;
     background-position: right center;
     background-repeat: no-repeat;
 }
@@ -33,7 +36,7 @@ nav {
 nav a {
     font-family: "Bebas Neue", sans-serif;
     color: #0b0400;
-    font-size: 1.66rem;
+    font-size: 1.7rem;
 }
 
 h1 {
@@ -41,8 +44,6 @@ h1 {
     color: #0b0400;
     text-align: left;
     font-size: 10rem;
-    
-
 }
 
 
@@ -57,6 +58,7 @@ p {
     text-align: left;
     line-height: 1.3rem;
 }
+
 
 
 h4 {
