@@ -14,27 +14,25 @@
 <body>
 
     <header>
+        <nav>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#habilidades">Habilidades</a>
+        </nav>
+        <!-- queria saber si es correcto la forma que integre el h1 y h2 para que esten a la misma altura de la imagen como queria-->
         <div class="portada">
-            <img src="perfil.jpg" alt="foto de perfil">
-            <!-- en el margen superior izquierdo de la pagina me aparece "foto de perfil" con el icono de imagen. antes no sucedia, ¿como lo resuelvo?-->
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Sobre mí</a>
-                <a href="#">Experiencia</a>
-                <a href="#">Habilidades</a>
-            </nav>
-        </div> 
-    </header> 
+            <div class="texto-portada">
+                <h1>Stephanie Dracópulos</h1>
+                <h2>Diseñadora y Comunicadora Visual</h2>
+            </div>
+            <img src="img/perfil.png" alt="foto de perfil" width="700" height="auto">
+        </div>
+    </header>
 
     <main>
 
-        <section id="hero">
-            <h1>Stephanie Dracópulos</h1>
-            <!-- me gustaria que mi nombre aparezca en dos lineas y en la portada, no estaria sabiendo como resolverlo-->
-            <h2>Diseñadora y Comunicadora Visual</h2>
-        </section>
-
-        <section>
+        <section id="sobre-mi">
+            <!--el programa me esta generando estos saltos de linea en las p, las cuales corrijo pero al rato vuelven aparecer. de todas forma eso no se ve reflejado en la pagina, tiene solucion o lo dejo asi?-->
             <h3>Sobre mí</h3>
             <p>¡Hola! Soy Stephanie. Estudio Diseño y Comunicación Visual en la UNLa y me apasiona todo lo que rodea al
                 mundo editorial y la producción gráfica. Como ayudante en la materia Tecnología Gráfica, combino la
@@ -43,41 +41,45 @@
                 criterio y mucho compromiso a cada proyecto. </p>
         </section>
 
-        <section>
+        <section id="experiencia">
             <h3>Experiencia</h3>
             <p>Mis proyectos combinan la práctica académica con trabajos independientes, enfocándome siempre en lo que
                 más me apasiona: el diseño editorial, la maquetación y la creación de piezas gráficas visualmente
                 cuidadas. He trabajado en diagramación de publicaciones y piezas digitales para redes.</p>
         </section>
 
-        <section>
+        <section id="habilidades">
             <h3>Habilidades</h3>
-            <p>Mis habilidades incluyen el manejo de software de diseño como Adobe InDesign, Illustrator y Photoshop,
-                así como conocimientos en tipografía, composición y teoría del color. También tengo experiencia en la
-                gestión de proyectos y trabajo en equipo.</p>
+            <p>Mis habilidades incluyen el manejo de software de diseño como Adobe InDesign, Illustrator y Photoshop, así como conocimientos en tipografía, composición y teoría del color. También tengo experiencia en la gestión de proyectos y trabajo en equipo.</p>
         </section>
 
     </main>
 
-    <footer>
+    <footer > 
+        <div class="footer-contenido">
+
         <h4>¡Trabajemos juntxs!</h4>
-        <!--tengo dudas de si estan bien colocados los iconos de las redes aca. la idea es que queden al lado de cada enlace.  -->
-        <img src= "img/behance.png" alt="icono de behance "width="26" height="16.16">
-        <img src= "img/linkedin.png" alt="icono de linkedin" width="17" height="17"> 
-        <img src= "img/correo.png" alt="icono de correo electrónico" width="17" height="17"> 
+
         <ul>
             <li>
+                <img src="img/behance.png" alt="icono de behance " width="26" height="17">
                 <a href="https://www.behance.net/stephaniedracopulos">Behance</a>
             </li>
 
             <li>
+                <img src="img/linkedin.png" alt="icono de linkedin" width="23" height="23">
                 <a href="https://www.linkedin.com/in/stephanie-dracopulos-heyboer/">LinkedIn</a>
             </li>
             <li>
+                <img src="img/correo.png" alt="icono de correo electrónico" width="23" height="23">
                 <a class="email" href="mailto:sdracopulos@gmail.com">Correo electrónico</a>
             </li>
         </ul>
-        <p>Cátedra Wischñevsky segundo cuatrimestre 2026</p>
+
+        <section id="catedra">
+            <img src="img/compu 3 transparente.svg" alt="icono de computadora" width="23" height="23">
+            <p>Cátedra Wischñevsky segundo cuatrimestre 2026</p>
+        </section>
     </footer>
 </body>
 

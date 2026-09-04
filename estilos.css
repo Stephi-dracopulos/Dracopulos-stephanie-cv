@@ -4,22 +4,39 @@
 
 * {
     font-family: "Roboto", sans-serif;
-    Background-color: #e0ddd2;
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-/* PORTADA */
+/* portada */
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    Background-color: #e0ddd2;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .portada {
     width: 100%;
-    min-height: 830px;
-    background-image: url("img/perfil.png");
-    background-size: 700px 736px;
-    background-position: right center;
-    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.texto-portada {
+    max-width: 50%;
+    padding-left: 50px;
 }
 
 /* aplicaciones */
@@ -31,6 +48,7 @@ nav {
     align-items: center;
     width: 100%;
     gap: 3rem;
+    padding: 20px 0;
 }
 
 nav a {
@@ -44,25 +62,99 @@ h1 {
     color: #0b0400;
     text-align: left;
     font-size: 10rem;
+    max-width: 50%;
+    line-height: 10rem;
 }
-
 
 h2 {
     font-family: "Bebas Neue", sans-serif;
     color: #d44b07;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
-p {
+main {
+    margin-top: 100px;
+    width: 100%;
+    padding-left: 0px;
     text-wrap-style: balance;
     text-align: left;
     line-height: 1.3rem;
 }
 
+#sobre-mi {
+    background-color: #d44b07;
+    color: #e0ddd2;
+    width: 100%;
+    min-height: 200px;
+    padding: 30px 50px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    
+}
+/* cada parrafo termina en un lugar diferente, aunque no esten justificados me gustaria que terminen todos a la misma altura, eso tiene que ver con los amrgenes de caja? no estaria pudiendo resolverlo*/
 
+#experiencia {
+    background-color: #e0ddd2;
+    color: #0b0400;
+    width: 100%;
+    min-height: 200px;
+    padding: 30px 50px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+#habilidades {
+    background-color: #0b0400;
+    color: #e0ddd2;
+    width: 100%;
+    min-height: 200px;
+    padding: 30px 50px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* footer */
+
+footer{
+    background: #e0ddd2;
+    border-top:2px solid #0b0400;
+    border-bottom:2px solid #0b0400;
+    padding:25px 50px;
+}
+
+.footer-contenido{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+}
 
 h4 {
     font-family: "Bebas Neue", sans-serif;
     color: #d44b07;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 20px;
+    min-height: 20%;
+} /* el h4 no me queda alineado con el resto de p que estan mas arriba, no me doy cuenta del error*/
+
+footer ul{
+    display:flex;
+    gap:35px;
+    margin:0;
+    padding:0;
+}
+
+footer li{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+#catedra {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#catedra p {
+    margin: 0;
+    font-style: italic;
 }
