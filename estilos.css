@@ -25,7 +25,6 @@ header {
     flex-direction: column;
 }
 
-
 .portada {
     width: 100%;
     min-height: 100vh;
@@ -70,15 +69,25 @@ h2 {
     font-family: "Bebas Neue", sans-serif;
     color: #d44b07;
     font-size: 3rem;
+    letter-spacing: 1px;
 }
 
 main {
     margin-top: 100px;
     width: 100%;
-    padding-left: 0px;
     text-wrap-style: balance;
     text-align: left;
     line-height: 1.3rem;
+}
+
+p {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    text-wrap: pretty; 
+    margin-top: 0;
+    margin-bottom: 0;
+    
 }
 
 #sobre-mi {
@@ -89,9 +98,7 @@ main {
     padding: 30px 50px;
     font-size: 1.5rem;
     line-height: 2rem;
-    
 }
-/* cada parrafo termina en un lugar diferente, aunque no esten justificados me gustaria que terminen todos a la misma altura, eso tiene que ver con los amrgenes de caja? no estaria pudiendo resolverlo*/
 
 #experiencia {
     background-color: #e0ddd2;
@@ -101,60 +108,78 @@ main {
     padding: 30px 50px;
     font-size: 1.5rem;
     line-height: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
+
+#experiencia img {
+    width: 25%;
+    height: 20%;
+    display: block;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
 #habilidades {
     background-color: #0b0400;
     color: #e0ddd2;
     width: 100%;
-    min-height: 200px;
+    max-height: 200px;
     padding: 30px 50px;
     font-size: 1.5rem;
     line-height: 2rem;
+    box-sizing: border-box;
 }
 
 /* footer */
-
-footer{
-    background: #e0ddd2;
-    border-top:2px solid #0b0400;
-    border-bottom:2px solid #0b0400;
-    padding:25px 50px;
-}
-
-.footer-contenido{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    width:100%;
-}
 
 h4 {
     font-family: "Bebas Neue", sans-serif;
     color: #d44b07;
     font-size: 3rem;
-    padding: 20px;
+    padding: 20px 0px;
     min-height: 20%;
-} /* el h4 no me queda alineado con el resto de p que estan mas arriba, no me doy cuenta del error*/
-
-footer ul{
-    display:flex;
-    gap:35px;
-    margin:0;
-    padding:0;
+    letter-spacing: 1px;
 }
 
-footer li{
-    display:flex;
-    align-items:center;
-    gap:8px;
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
-#catedra {
+
+.footer-contenido {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.footer-contenido ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0 0 0 auto;
+}
+
+.footer-contenido li {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
+#catedra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    margin-left: 40px;
+}
+
 #catedra p {
-    margin: 0;
     font-style: italic;
 }
