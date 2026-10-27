@@ -42,18 +42,25 @@ header {
 
 nav {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: 3rem;
-    padding: 20px 0;
+    padding: 20px 5%;
+    box-sizing: border-box;
+    gap: 25px;
+}
+
+.menu {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
 }
 
 nav a {
     font-family: "Bebas Neue", sans-serif;
     color: #0b0400;
     font-size: 1.7rem;
+    text-decoration: none;
 }
 
 h1 {
@@ -81,63 +88,47 @@ main {
 }
 
 p {
-    width: 100%;
+    width: 770px;
     box-sizing: border-box;
     margin-bottom: 24px;
-    text-wrap: pretty; 
+    text-wrap: pretty;
     margin-top: 0;
     margin-bottom: 0;
-    
+
 }
 
-#sobre-mi {
-    background-color: #d44b07;
-    color: #e0ddd2;
-    width: 100%;
-    min-height: 200px;
-    padding: 30px 50px;
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-
-#experiencia {
-    background-color: #e0ddd2;
-    color: #0b0400;
-    width: 100%;
-    min-height: 200px;
-    padding: 30px 50px;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
-
-#experiencia img {
-    width: 25%;
-    height: 20%;
-    display: block;
-    object-fit: cover;
-    margin-top: 30px;
-}
-
-#habilidades {
-    background-color: #0b0400;
-    color: #e0ddd2;
-    width: 100%;
-    max-height: 200px;
-    padding: 30px 50px;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    box-sizing: border-box;
+#introduccion {
+    display: inline-flex;
+    height: 300px;
+    padding-left:100px;
+    align-items: center;
+    background: #D44B07;
 }
 
 /* footer */
 
-h4 {
+h3 {
     font-family: "Bebas Neue", sans-serif;
-    color: #d44b07;
-    font-size: 3rem;
+    color: #E0DDD2;
+    font-size: 1.6rem;
+    padding: 20px 0px;
+    min-height: 20%;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-family: "Roboto", sans-serif;
+    color: #E0DDD2;
+    font-size: 1rem;
+    padding: 20px 0px;
+    min-height: 20%;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #E0DDD2;
+    font-size: 1.6rem;
     padding: 20px 0px;
     min-height: 20%;
     letter-spacing: 1px;
@@ -150,36 +141,37 @@ footer {
     padding: 20px 40px;
     width: 100%;
     box-sizing: border-box;
+    background-color: #0b0400;
 }
 
-.footer-contenido {
+.footer-info   {  
     display: flex;
-    align-items: center;
-    flex-grow: 1;
+    flex-direction: column;
+    gap: 4px;
 }
 
-.footer-contenido ul {
+.footer-info h3, 
+.footer-info h4 { 
+    padding: 0;       
+    min-height: auto;
+}
+
+.footer-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+.footer-contacto ul {
     display: flex;
     align-items: center;
     gap: 20px;
     list-style: none;
-    margin: 0 0 0 auto;
+    margin: 0;
 }
 
-.footer-contenido li {
+.footer-contacto li {
     display: flex;
     align-items: center;
     gap: 8px;
-}
-
-#catedra {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    white-space: nowrap;
-    margin-left: 40px;
-}
-
-#catedra p {
-    font-style: italic;
 }
